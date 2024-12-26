@@ -3,8 +3,6 @@
 import React, { useState, useEffect } from "react";
 import { Card } from "@/components/ui/card";
 import {
-  WalletModalProvider,
-  WalletDisconnectButton,
   WalletMultiButton,
 } from "@solana/wallet-adapter-react-ui";
 
@@ -14,19 +12,19 @@ const DuelPage = () => {
   const [tagLine, setTagLine] = useState("");
   const [walletAddress, setWalletAddress] = useState("");
 
-  const [playerStats, setPlayerStats] = useState(null);
+  // const [playerStats, setPlayerStats] = useState(null);
 
   const fetchPlayerStats = async () => {
     try {
-      const [name, tagLine] = userId.split("#");
-      const response = await fetch(`/api/valorant?userId=${name}&tagLine=${tagLine}`, {
-        method: "GET",
-      });
+      // const [name, tagLine] = userId.split("#");
+      // const response = await fetch(`/api/valorant?userId=${name}&tagLine=${tagLine}`, {
+      //   method: "GET",
+      // });
 
-      if (response.ok) {
-        const stats = await response.json();
-        setPlayerStats(stats);
-      }
+      // if (response.ok) {
+      //   const stats = await response.json();
+      //   setPlayerStats(stats);
+      // }
     } catch (error) {
       console.error("Error fetching player stats:", error);
     }
