@@ -23,7 +23,6 @@ export const metadata: Metadata = {
     site: '@KaiVandyck',
     title: 'Rioff',
     description: 'Tie your riot to wallet',
-    images: 'https://media.assettype.com/afkgaming/import/media/images/13974-fd9b45e17c5887653166de9fbe97437f.jpeg?w=1200&h=675&auto=format%2Ccompress&fit=max',
     players: {
       playerUrl: '/',
       streamUrl: '/',
